@@ -1,0 +1,7 @@
+.loading_div{
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 bg-blue-600 rounded-lg min-w-52 text-center text-white shadow-lg animate-bounce z-50
+}
+
+.background{
+    @apply fixed top-0 left-0 w-screen h-screen bg-slate-500 opacity-50
+}

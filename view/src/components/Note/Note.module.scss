@@ -1,0 +1,15 @@
+.main_div{
+    @apply bg-orange-100 rounded-lg w-full flex flex-col gap-2 shadow-lg hover:shadow-xl hover:shadow-black
+}
+
+.heading{
+    @apply break-words p-2 bg-slate-500 text-white text-center hover:border-2 hover:border-white hover:shadow-xl hover:shadow-black transition-all
+}
+
+.description{
+    @apply break-words p-2 text-left hover:border-2 hover:border-white hover:shadow-xl hover:shadow-black hover:min-h-64 resize-none min-h-32 overflow-y-auto transition-all
+}
+
+.delete_button{
+    @apply bg-red-300 rounded-b-lg hover:opacity-50 transition-all
+}   

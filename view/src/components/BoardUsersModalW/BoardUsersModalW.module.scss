@@ -1,0 +1,41 @@
+.open_button{
+    @apply border-2 border-blue-400 rounded-lg shadow-lg hover:shadow-md hover:shadow-blue-500 p-3
+}
+
+.button_div{
+    @apply flex justify-between p-3 border-blue-700 border-2 rounded-lg border-opacity-50 h-full w-full flex justify-items-center
+}
+
+.modal{
+    @apply hidden max-h-96 overflow-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-10 z-30 shadow-md flex flex-col gap-5 justify-center items-center min-w-96
+}
+
+.overlay{
+    @apply hidden fixed top-0 left-0 w-screen h-screen bg-slate-500 z-20 opacity-45
+}
+
+.create_button{
+    @apply bg-blue-400 text-sm p-1 rounded-md border-2 border-blue-950 border-opacity-10 hover:bg-opacity-50 hover:text-blue-900 hover:shadow-xl transition-all my-4
+}
+
+.name_input{
+    @apply w-full border-gray-600 rounded-lg border-2 border-opacity-40 p-2 placeholder:text-black placeholder:text-opacity-70 focus:border-opacity-50 transition-colors my-2
+}
+
+.add_field{
+    @apply hidden max-h-80 overflow-auto border-2 border-blue-500 p-4 rounded-lg transition-all;
+    .input{
+        @apply w-full border-2 border-gray-400 rounded-lg p-2
+    }
+}
+
+.users_list_div{
+    @apply flex flex-col gap-2 my-4
+}
+
+.modal.active, .overlay.active, .add_field.active{
+    @apply block
+}
+
+
+

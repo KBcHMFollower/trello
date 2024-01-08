@@ -1,0 +1,17 @@
+.main_div{
+    @apply flex justify-between border-2 border-orange-300 rounded-md p-3
+}
+
+.user_info_div{
+
+}
+
+.button{
+    @apply  shadow-lg shadow-gray-500 px-4 text-white font-semibold hover:text-black hover:shadow-md transition-all;
+    &.add{
+        @apply bg-blue-600;
+    }
+    &.kick{
+        @apply bg-red-400;
+    }
+}

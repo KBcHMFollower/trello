@@ -1,0 +1,15 @@
+.heading_div{
+    @apply flex gap-10 items-center justify-between
+}
+
+.delete_button{
+    @apply border-2 border-blue-400 rounded-lg shadow-lg hover:shadow-md hover:shadow-blue-500 p-3
+}
+
+.name_input{
+    @apply font-bold text-2xl bg-transparent hover:border-white hover:border-2 hover:shadow-lg hover:shadow-black
+}
+
+.descr_input{
+    @apply resize-none bg-orange-300 rounded-b-lg p-3 font-semibold shadow-lg hover:border-white hover:border-2 hover:shadow-lg hover:shadow-black
+}

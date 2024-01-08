@@ -1,0 +1,27 @@
+.open_button{
+    @apply bg-orange-500 rounded-b-lg p-3 w-full text-white bg-opacity-40 hover:bg-opacity-100
+}
+
+.button_div{
+    @apply flex justify-between p-3 border-blue-700 border-2 rounded-lg border-opacity-50 h-full w-full flex justify-items-center
+}
+
+.modal{
+    @apply hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-10 z-50 shadow-md flex flex-col gap-5 justify-center items-center min-w-96
+}
+
+.overlay{
+    @apply hidden fixed top-0 left-0 w-screen h-screen bg-slate-500 z-40 opacity-45
+}
+
+.create_button{
+    @apply bg-blue-400 w-full rounded-lg p-2 border-2 border-blue-950 border-opacity-50 hover:bg-opacity-50 hover:text-blue-900 hover:shadow-xl transition-all
+}
+
+.name_input{
+    @apply w-full border-gray-600 rounded-lg border-2 border-opacity-40 p-2 placeholder:text-black placeholder:text-opacity-70 focus:border-opacity-50 transition-colors my-2
+}
+
+.modal.active, .overlay.active{
+    @apply block
+}
