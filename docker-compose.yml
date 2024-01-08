@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: ./trello_app/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres
+  
+  client:
+    build: 
+      context: .
+      dockerfile: ./view/Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+
+  postgres:
+    image: postgres
+    ports:
+      - "5001:5432"
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=trello
+
