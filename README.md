@@ -31,5 +31,5 @@ Mini-Trello представляет собой платформу для соз
   ```bash
     `docker-compose up` 
   ```
-в терминале.
+  в терминале.
 5. Откройте браузер и перейдите по адресу [http://localhost:3000/login](http://localhost:3000/login).
