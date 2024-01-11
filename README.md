@@ -29,7 +29,7 @@ Mini-Trello представляет собой платформу для соз
 1. Установите Docker на вашем компьютере.
 2. В корневой папке проекта с файлом `docker-compose.yml` выполните команду
   ```bash
-    `docker-compose up` 
+    docker-compose up 
   ```
   в терминале.
 5. Откройте браузер и перейдите по адресу [http://localhost:3000/login](http://localhost:3000/login).
