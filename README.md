@@ -33,3 +33,14 @@ Mini-Trello представляет собой платформу для соз
   ```
   в терминале.
 5. Откройте браузер и перейдите по адресу [http://localhost:3000/login](http://localhost:3000/login).
+####Если вы хотите запустить приложение не в контейнере:
+1. Установите postgreSQL на пк
+2. Укажите там : порт-5001 user-postgres password-admin
+3. создайте там базу данным "trello"
+4. Зайдите в файл `./trello_app/Prigram.cs`
+5. на 10 строке `var connectionString = builder.Configuration.GetConnectionString("DockerConnection");` измените "DockerConnection" на `DefaultConnection`
+6. Зайдите в trello_app.sln и запустите сервер
+7. В папке `view` напишите в терминале
+   ```bash
+     npm run start
+   ```
