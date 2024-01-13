@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 //axios
 
 export const $host = axios.create({
-    baseURL: 'http://localhost:5000/'
+    baseURL: `${process.env.REACT_APP_API_URL}`
 })
 
 const hostInterceptor = (config: InternalAxiosRequestConfig): InternalAxiosRequestConfig => {
@@ -20,7 +20,7 @@ const hostInterceptor = (config: InternalAxiosRequestConfig): InternalAxiosReque
   //rtk
 
   const baseQuery = fetchBaseQuery({
-    baseUrl:'http://localhost:5000/api',
+    baseUrl:`${process.env.REACT_APP_API_URL}api`,
     prepareHeaders(headers, api) {
       headers.set('Authorization', `${localStorage.getItem('token')}`);
       return headers;
