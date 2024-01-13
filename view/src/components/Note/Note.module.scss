@@ -1,5 +1,5 @@
 .main_div{
-    @apply bg-orange-100 rounded-lg w-full flex flex-col gap-2 shadow-lg hover:shadow-xl hover:shadow-black
+    @apply bg-orange-100 rounded-lg w-full flex flex-row shadow-lg hover:shadow-xl hover:shadow-black
 }
 
 .heading{
@@ -11,5 +11,12 @@
 }
 
 .delete_button{
-    @apply bg-red-300 rounded-b-lg hover:opacity-50 transition-all
-}   
+    @apply bg-red-300 rounded-bl-lg hover:opacity-50 transition-all
+}
+
+.status_button{
+    @apply hover:bg-black hover:border-2 hover:border-white bg-red-500 flex-1 flex justify-center flex-col rounded-e-lg;
+    &.ready{
+        @apply bg-green-500
+    }
+}

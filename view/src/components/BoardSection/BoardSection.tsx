@@ -39,6 +39,7 @@ export const BoardSection: FC<PropsType> = ({ name, updateSection, createNote, u
                     <button className={styles.delete_button}>X</button>
                 </div>
                 <Note
+                    status={'LOADING'}
                     updateNote={({ noteId, updateName, updateData }) => updateNote({ sectionId: sectionId, noteId: noteId, updateName: updateName, updateData: updateData })}
                     sectionId={sectionId}
                     noteId={-1}
@@ -61,6 +62,7 @@ export const BoardSection: FC<PropsType> = ({ name, updateSection, createNote, u
                     className={styles.delete_button}>X</button>
             </div>
             {data.map(e => <Note
+                status={e.status}
                 updateNote={({ noteId, updateName, updateData }) => updateNote({ sectionId: sectionId, noteId: noteId, updateName: updateName, updateData: updateData })}
                 sectionId={sectionId}
                 noteId={e.id}

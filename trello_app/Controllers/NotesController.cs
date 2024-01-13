@@ -28,6 +28,7 @@ namespace trello_app.Controllers
                 note.Id,
                 note.Name,
                 note.Description,
+                note.Status,
                 Section = note.Section.Id
             });
         }
@@ -61,6 +62,7 @@ namespace trello_app.Controllers
                     note.Id,
                     note.Name,
                     note.Description,
+                    note.Status,
                     Section = note.Section.Id
                 }).ToList();
 
@@ -196,6 +198,7 @@ namespace trello_app.Controllers
                     Name = createInfo.Name,
                     Section = boardSection,
                     Description = createInfo.Description,
+                    Status = "In work"
                 };
 
                 boardSection.Notes.Add(note);
@@ -256,6 +259,11 @@ namespace trello_app.Controllers
                 if (updateInfo.Description != null)
                 {
                     note.Description = updateInfo.Description;
+                }
+
+                if (updateInfo.Status != null)
+                {
+                    note.Status = updateInfo.Status;
                 }
 
                 if (updateInfo.sectionId != null)

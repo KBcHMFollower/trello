@@ -8,6 +8,7 @@ namespace trello_app.Models
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }
+        public string Status { get; set; }
         [Required]
         [ForeignKey("BoardSection_id")]
         public BoardSection Section { get; set; }

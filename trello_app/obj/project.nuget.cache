@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "129msjXgfevrXG/CaaB3e+SMzNBvCH36g4ISBq1OH6wDyP8vBHjKTpCACRwEnQdLHoVfFb9ctGvjCmIJHe7A0Q==",
+  "dgSpecHash": "Y7Csc53TBhx2p8IXmtGuW4M9LVjGw2g1Gp0vmtPy8iwfqhXAna/NDbOTz8euBxVMCOTMLM7JF++2tjIVKQHz5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\trello_app.csproj",
+  "projectFilePath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\trello_app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Streliziy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Streliziy\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.25\\microsoft.aspnetcore.authentication.jwtbearer.6.0.25.nupkg.sha512",

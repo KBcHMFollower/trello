@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\trello_app.csproj": {}
+    "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\trello_app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\trello_app.csproj": {
+    "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\trello_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\trello_app.csproj",
+        "projectUniqueName": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\trello_app.csproj",
         "projectName": "trello_app",
-        "projectPath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\trello_app.csproj",
+        "projectPath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\trello_app.csproj",
         "packagesPath": "C:\\Users\\Streliziy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\server\\trello_app\\obj\\",
+        "outputPath": "C:\\Users\\Streliziy\\Desktop\\developing\\trello_app\\trello_app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Streliziy\\AppData\\Roaming\\NuGet\\NuGet.Config",

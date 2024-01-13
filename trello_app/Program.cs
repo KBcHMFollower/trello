@@ -7,7 +7,7 @@ using trello_app.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConntection");
+var connectionString = builder.Configuration.GetConnectionString("DockerConnection");
 
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

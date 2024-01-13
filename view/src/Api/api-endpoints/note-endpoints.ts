@@ -1,15 +1,15 @@
 import { api } from "../api";
-import { IElement } from "../models/element-model";
+import { INote } from "../models/note-model";
 
 export const noteEndpoints = api.injectEndpoints({
     endpoints: (builder)=>({
-        getSectionsNotes: builder.query<IElement[], {boardId:number; sectionId:number}>({
+        getSectionsNotes: builder.query<INote[], {boardId:number; sectionId:number}>({
             query: (noteInfo)=>{
                 return `boards/${noteInfo.boardId}/sections/${noteInfo.sectionId}/notes`;
             },
             providesTags:result=>['Notes']
         }),
-        createNote: builder.mutation<IElement, {boardId:number; sectionId:number; name:string; description:string}>({
+        createNote: builder.mutation<INote, {boardId:number; sectionId:number; name:string; description:string}>({
             query: (createInfo) => ({
                 url:`/boards/${createInfo.boardId}/sections/${createInfo.sectionId}/notes`,
                 method: 'POST',
@@ -20,14 +20,14 @@ export const noteEndpoints = api.injectEndpoints({
             }),
             invalidatesTags:['Notes']
         }),
-        deleteNote: builder.mutation<IElement, {boardId:number; sectionId:number; noteId:number}>({
+        deleteNote: builder.mutation<INote, {boardId:number; sectionId:number; noteId:number}>({
             query: (deleteInfo) => ({
                 url:`/boards/${deleteInfo.boardId}/sections/${deleteInfo.sectionId}/notes/${deleteInfo.noteId}`,
                 method: 'DELETE',
             }),
             invalidatesTags:['Notes']
         }),
-        updateNote: builder.mutation<IElement, {boardId:number; sectionId:number; noteId:number; updateName:string; updateData: string | number }>({
+        updateNote: builder.mutation<INote, {boardId:number; sectionId:number; noteId:number; updateName:string; updateData: string | number }>({
             query: (updateInfo) => {
                 return (
                 {
